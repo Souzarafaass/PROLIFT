@@ -1620,3 +1620,164 @@ header{
 
 }
 
+/* =========================
+   RESPONSIVO GERAL - CELULAR
+========================= */
+
+@media(max-width:768px){
+
+  body{
+    overflow-x:hidden;
+  }
+
+  header{
+    padding:14px 0;
+  }
+
+  .logo{
+    font-size:26px;
+  }
+
+  /* HERO */
+  .hero{
+    min-height:100vh;
+    height:auto;
+    padding:120px 20px 70px;
+    background-position:center top;
+  }
+
+  .hero-content{
+    width:100%;
+    max-width:95%;
+    margin-top:0;
+    padding:35px 22px;
+  }
+
+  .hero h1{
+    font-size:34px;
+    line-height:1.15;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .btn{
+    width:100%;
+    padding:16px 20px;
+    font-size:15px;
+  }
+
+  /* SERVIÇOS */
+  .cards-servicos,
+  .porque-grid,
+  .entregas-grid{
+    grid-template-columns:1fr;
+  }
+
+  .card,
+  .porque-card,
+  .entrega-card{
+    width:100%;
+  }
+
+  /* CTA ELEVADOR */
+  .cta-elevador{
+    min-height:100vh;
+    height:auto;
+    padding:90px 18px;
+    background-position:center center;
+  }
+
+  .cta-box{
+    width:100%;
+    padding:35px 22px;
+    border-radius:18px;
+  }
+
+  .cta-box h2{
+    font-size:30px;
+    line-height:1.2;
+  }
+
+  .cta-box p{
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .btn-cta{
+    width:100%;
+    padding:16px 20px;
+    font-size:15px;
+  }
+
+  .seta{
+    font-size:42px;
+  }
+
+  /* SOBRE */
+  .sobre-container{
+    flex-direction:column;
+    gap:40px;
+  }
+
+  .sobre-texto{
+    text-align:center;
+  }
+
+  .sobre-texto h2{
+    font-size:34px;
+  }
+
+  .sobre-texto p{
+    font-size:15px;
+  }
+
+  .sobre-imagem img{
+    height:auto;
+    max-height:380px;
+    width:100%;
+    object-fit:cover;
+  }
+
+  /* FAQ */
+  .faq h2{
+    font-size:34px;
+  }
+
+  .faq-pergunta{
+    font-size:15px;
+    padding:22px;
+  }
+
+  .faq-resposta p{
+    font-size:14px;
+  }
+
+  /* CONTATO */
+  .contato-container{
+    flex-direction:column;
+  }
+
+  .contato-info h2{
+    font-size:34px;
+  }
+
+  .contato-mapa iframe{
+    height:350px;
+  }
+
+  /* WHATSAPP */
+  .whatsapp-fixo{
+    width:55px;
+    height:55px;
+    top:12px;
+    right:12px;
+  }
+
+  .whatsapp-fixo img{
+    width:28px;
+    height:28px;
+  }
+
+}
