@@ -2258,3 +2258,35 @@ header{
   }
 }
 
+/* =========================
+   AJUSTE FINAL LOGOTIPO
+========================= */
+
+/* DESKTOP */
+header{
+  height:105px !important;
+}
+
+.logo img{
+  width:210px !important;
+  height:auto !important;
+  max-height:85px !important;
+  object-fit:contain !important;
+}
+
+/* CELULAR */
+@media(max-width:768px){
+
+  header{
+    height:100px !important;
+  }
+
+  .logo img{
+    width:165px !important;
+    height:auto !important;
+    max-height:75px !important;
+  }
+
+}
+
+
