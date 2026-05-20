@@ -2394,4 +2394,23 @@ header{
   text-shadow:none !important;
 }
 
+/* =========================
+   AJUSTE FUNDO CTA MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .cta-elevador{
+    background-image:
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+      url('elevador-hero.png') !important;
+
+    background-size:cover !important;
+
+    /* foca nos botões e no dedo */
+    background-position:18% center !important;
+  }
+
+}
+
 
