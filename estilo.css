@@ -776,7 +776,7 @@ header{
 }
 
 .faq h2 span{
-  color:#00cfff;
+  color:#fff;
 }
 
 .faq-lista{
@@ -1255,10 +1255,9 @@ header{
 }
 
 .faq h2 span{
-  color:#123F82;
+  color:#fff;
 
-  text-shadow:
-  0 2px 10px rgba(18,63,130,0.45);
+  text-shadow:none;
 }
 
 /* CAIXAS */
@@ -2320,6 +2319,67 @@ header{
     height:auto !important;
 
     max-height:none !important;
+  }
+
+}
+
+/* =================================
+   AJUSTE CTA MOBILE CENTRALIZADO
+================================= */
+
+@media(max-width:768px){
+
+  .cta-elevador{
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    padding:120px 16px 140px !important;
+
+    background-size:cover !important;
+
+    /* MOSTRA MAIS DA FOTO */
+    background-position:center center !important;
+  }
+
+  .cta-container{
+
+    width:100% !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+  }
+
+  .cta-box{
+
+    margin:0 auto !important;
+
+    width:100% !important;
+    max-width:340px !important;
+
+    text-align:center !important;
+  }
+
+  .cta-box h2{
+    text-align:center !important;
+  }
+
+  .cta-box p{
+    text-align:center !important;
+  }
+
+  .btn-cta{
+
+    display:flex !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+
+    margin:25px auto 0 auto !important;
   }
 
 }
