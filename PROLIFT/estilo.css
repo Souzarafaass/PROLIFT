@@ -238,7 +238,9 @@ header{
   width:100%;
   min-height:100vh;
 
-  background:url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1974&auto=format&fit=crop');
+  background:
+  linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+  url('elevador-hero.png');
 
   background-size:cover;
   background-position:center;
@@ -1056,43 +1058,6 @@ header{
 }
 
 /* =========================
-   WHATSAPP FIXO
-========================= */
-
-.whatsapp-fixo{
-  position:fixed;
-
-  top:20px;
-  right:20px;
-
-  width:65px;
-  height:65px;
-
-  background:#25D366;
-
-  border-radius:50%;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  box-shadow:0 10px 25px rgba(0,0,0,0.25);
-
-  z-index:99999;
-
-  transition:0.3s;
-}
-
-.whatsapp-fixo:hover{
-  transform:scale(1.1);
-}
-
-.whatsapp-fixo img{
-  width:34px;
-  height:34px;
-}
-
-/* =========================
    AJUSTE AZUL MARINHO PROLIFT
 ========================= */
 
@@ -1621,163 +1586,225 @@ header{
 }
 
 /* =========================
-   RESPONSIVO GERAL - CELULAR
+   HEADER
 ========================= */
+
+header{
+  height:90px;
+
+  background:#fff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  position:relative;
+}
+
+/* =================================
+   AUMENTAR ALTURA DA BARRA SUPERIOR
+================================= */
+
+header{
+  height:180px;
+}
+
+/* LOGOTIPO */
+
+.logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.logo img{
+  height:240px;
+  width:auto;
+
+  display:block;
+
+  object-fit:contain;
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
-  body{
-    overflow-x:hidden;
-  }
-
   header{
-    padding:14px 0;
+    height:125px;
   }
 
-  .logo{
-    font-size:26px;
-  }
-
-  /* HERO */
-  .hero{
-    min-height:100vh;
-    height:auto;
-    padding:120px 20px 70px;
-    background-position:center top;
-  }
-
-  .hero-content{
-    width:100%;
-    max-width:95%;
-    margin-top:0;
-    padding:35px 22px;
-  }
-
-  .hero h1{
-    font-size:34px;
-    line-height:1.15;
-  }
-
-  .hero p{
-    font-size:15px;
-  }
-
-  .btn{
-    width:100%;
-    padding:16px 20px;
-    font-size:15px;
-  }
-
-  /* SERVIÇOS */
-  .cards-servicos,
-  .porque-grid,
-  .entregas-grid{
-    grid-template-columns:1fr;
-  }
-
-  .card,
-  .porque-card,
-  .entrega-card{
-    width:100%;
-  }
-
-  /* CTA ELEVADOR */
-  .cta-elevador{
-    min-height:100vh;
-    height:auto;
-    padding:90px 18px;
-    background-position:center center;
-  }
-
-  .cta-box{
-    width:100%;
-    padding:35px 22px;
-    border-radius:18px;
-  }
-
-  .cta-box h2{
-    font-size:30px;
-    line-height:1.2;
-  }
-
-  .cta-box p{
-    font-size:14px;
-    line-height:1.6;
-  }
-
-  .btn-cta{
-    width:100%;
-    padding:16px 20px;
-    font-size:15px;
-  }
-
-  .seta{
-    font-size:42px;
-  }
-
-  /* SOBRE */
-  .sobre-container{
-    flex-direction:column;
-    gap:40px;
-  }
-
-  .sobre-texto{
-    text-align:center;
-  }
-
-  .sobre-texto h2{
-    font-size:34px;
-  }
-
-  .sobre-texto p{
-    font-size:15px;
-  }
-
-  .sobre-imagem img{
-    height:auto;
-    max-height:380px;
-    width:100%;
-    object-fit:cover;
-  }
-
-  /* FAQ */
-  .faq h2{
-    font-size:34px;
-  }
-
-  .faq-pergunta{
-    font-size:15px;
-    padding:22px;
-  }
-
-  .faq-resposta p{
-    font-size:14px;
-  }
-
-  /* CONTATO */
-  .contato-container{
-    flex-direction:column;
-  }
-
-  .contato-info h2{
-    font-size:34px;
-  }
-
-  .contato-mapa iframe{
-    height:350px;
-  }
-
-  /* WHATSAPP */
-  .whatsapp-fixo{
-    width:55px;
-    height:55px;
-    top:12px;
-    right:12px;
-  }
-
-  .whatsapp-fixo img{
-    width:28px;
-    height:28px;
+  .logo img{
+    height:170px;
   }
 
 }
+
+/* DESENCOSTAR LOGO DO TOPO */
+
+.logo{
+  padding-top:20px;
+}
+
+/* =========================
+   HEADER COM MENU
+========================= */
+
+header{
+  height:110px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.06);
+}
+
+.menu{
+  position:absolute;
+  left:70px;
+  top:50%;
+  transform:translateY(-50%);
+  display:flex;
+  align-items:center;
+  gap:35px;
+}
+
+.menu a{
+  color:#123F82;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:700;
+}
+
+.menu a:hover{
+  color:#0B2E5C;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding-top:12px;
+}
+
+.logo img{
+  height:380px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+}
+
+.whatsapp-fixo{
+  position:absolute;
+  right:35px;
+  top:50%;
+  transform:translateY(-50%);
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:30px;
+  text-decoration:none;
+  box-shadow:0 8px 22px rgba(0,0,0,0.25);
+  z-index:1001;
+}
+
+.whatsapp-fixo:hover{
+  transform:translateY(-50%) scale(1.08);
+}
+
+@media(max-width:768px){
+
+  header{
+    height:135px;
+    flex-direction:column;
+  }
+
+  .menu{
+    position:absolute;
+    left:15px;
+    top:18px;
+    transform:none;
+    gap:12px;
+  }
+
+  .menu a{
+    font-size:13px;
+  }
+
+  .logo img{
+    height:170px;
+  }
+
+  .whatsapp-fixo{
+    right:14px;
+    top:22px;
+    width:48px;
+    height:48px;
+    font-size:24px;
+  }
+}
+
+/* =================================
+   CTA PREMIUM CLEAN
+================================= */
+
+.cta-box{
+
+  border:1px solid rgba(255,255,255,0.22);
+
+  padding:60px 50px;
+
+  border-radius:24px;
+
+  background:rgba(255,255,255,0.72);
+
+  backdrop-filter:blur(10px);
+
+  -webkit-backdrop-filter:blur(10px);
+
+  box-shadow:
+  0 10px 35px rgba(0,0,0,0.18);
+
+}
+
+.cta-box h2{
+  color:#111;
+
+  text-shadow:none;
+
+  font-weight:800;
+}
+
+.cta-box h2 span{
+
+  color:#123F82;
+
+  font-weight:800;
+
+  text-shadow:
+  0 1px 2px rgba(255,255,255,0.35);
+
+}
+
+/* =================================
+   TEXOS PRETOS NO CTA
+================================= */
+
+.cta-box p{
+  color:#111;
+}
+
+.destaque{
+  color:#111;
+}
+
