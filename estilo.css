@@ -2395,20 +2395,22 @@ header{
 }
 
 /* =========================
-   AJUSTE FUNDO CTA MOBILE
+   FUNDO MOBILE ELEVADOR
 ========================= */
 
-@media(max-width:768px){
+@media screen and (max-width:768px){
 
   .cta-elevador{
-    background-image:
+
+    background:
       linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-      url('elevador-hero.png') !important;
+      url("elevador-hero.png") !important;
 
     background-size:cover !important;
 
-    /* foca nos botões e no dedo */
-    background-position:18% center !important;
+    background-position:15% center !important;
+
+    background-repeat:no-repeat !important;
   }
 
 }
