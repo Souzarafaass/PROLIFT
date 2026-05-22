@@ -2480,3 +2480,33 @@ header{
   background:#1148aa;
   transform:translateY(-2px);
 }
+
+/* MOBILE - ÍCONES CONTATO */
+
+.contato-icone{
+  min-width:70px;
+  width:70px;
+  height:70px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-shrink:0;
+}
+
+@media (max-width:768px){
+
+  .contato-item{
+    align-items:flex-start;
+    gap:20px;
+  }
+
+  .contato-icone{
+    min-width:65px;
+    width:65px;
+    height:65px;
+    border-radius:18px;
+  }
+
+}
