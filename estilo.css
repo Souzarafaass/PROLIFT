@@ -2510,3 +2510,37 @@ header{
   }
 
 }
+
+/* CORREÇÃO TEXTO CONTATO MOBILE FINAL */
+
+@media(max-width:768px){
+
+  .contato{
+    padding-left:22px !important;
+    padding-right:22px !important;
+  }
+
+  .contato-item{
+    width:100% !important;
+    align-items:flex-start !important;
+  }
+
+  .contato-item > div:last-child{
+    width:100% !important;
+    min-width:0 !important;
+  }
+
+  .contato-item a,
+  .contato-item p{
+    font-size:18px !important;
+    line-height:1.5 !important;
+
+    word-break:break-word !important;
+    overflow-wrap:anywhere !important;
+  }
+
+  .contato-item h3{
+    font-size:24px !important;
+  }
+
+}
