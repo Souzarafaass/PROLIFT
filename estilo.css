@@ -2452,3 +2452,31 @@ header{
 .entrega-card h3{
   word-break:break-word !important;
 }
+
+/* ESTILIZANDO BOTÃO PRIMEIRA SESSÃO */
+
+.hero-btn{
+  background:#0d3b8e;
+  color:#fff;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  padding:16px 34px;
+  border-radius:12px;
+
+  text-decoration:none;
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.hero-btn i{
+  font-size:20px;
+  color:#fff;
+}
+
+.hero-btn:hover{
+  background:#1148aa;
+  transform:translateY(-2px);
+}
