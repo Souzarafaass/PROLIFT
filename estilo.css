@@ -543,7 +543,7 @@ header{
 }
 
 .entregas h2 span{
-  color:#00cfff;
+  color:#fff;
 }
 
 .entregas-subtitulo{
@@ -1411,10 +1411,8 @@ header{
 }
 
 .entregas h2 span{
-  color:#123F82;
-
-  text-shadow:
-  0 2px 12px rgba(18,63,130,0.45);
+  color:#fff !important;
+  text-shadow:none !important;
 }
 
 /* TEXTO */
@@ -2415,4 +2413,42 @@ header{
 
 }
 
+/* =========================
+   CORREÇÃO GRID ENTREGAS
+========================= */
 
+@media(max-width:1300px){
+
+  .entregas-grid{
+    grid-template-columns:repeat(2, 1fr) !important;
+  }
+
+  .entrega-card h3{
+    font-size:26px !important;
+    line-height:1.25 !important;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .entregas-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .entrega-card h3{
+    font-size:24px !important;
+  }
+
+}
+
+/* CORREÇÃO CARD ENTREGAS */
+
+.entrega-card{
+  overflow:visible !important;
+  min-width:0 !important;
+}
+
+.entrega-card h3{
+  word-break:break-word !important;
+}
